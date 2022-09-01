@@ -21,4 +21,21 @@ function init() {
     }
     console.log(array);
     setTimeout(init, 1000); //point 1 time delay function
+    loop();
+}
+
+
+let counter = -1;
+
+const string = document.querySelector("h1").innerHTML;
+const lengthOfString = (string.length) - 1;
+document.querySelector("h1").innerHTML = " ";
+
+
+function loop() {
+    if (counter < lengthOfString) {
+        counter++;
+        document.querySelector("h1").innerHTML += string[counter];
+        setTimeout(loop, 500);
+    }
 }
