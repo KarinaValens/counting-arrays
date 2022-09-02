@@ -24,7 +24,7 @@ function init() {
     loop();
 }
 
-
+/* -------THE NEXT PART IS FROM THE TYPING EXERCISE  not relevant for this one--------- */
 let counter = -1;
 
 const string = document.querySelector("h1").innerHTML;
